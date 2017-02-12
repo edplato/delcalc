@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delay Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div class="container">
+<form id="input-form">
+  Input BPM:<br>
+  <input type="text" id="form-bpm">
+
+  
+</form>
+<button>Submit</button>
+<div class="row">
+	<h3 id="demo">Notes</h3>
+	<table>
+	<tbody class="notesTable"> 
+	    <tr><td>1/1:</td><td><span id="table-1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-4">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-8">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-16">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-32">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-64">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-128">0</span> ms</td></tr>
+	 </tbody>
+ </table>
+</div>
+<div class="row">
+	<h3>Triplets</h3>
+	<table>
+	<tbody class="tripletsTable"> 
+	    <tr><td>1/1:</td><td><span id="table-1t">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-2t">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-4t">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-8t">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-16t">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-32t">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-64t">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-128t">0</span> ms</td></tr>
+	 </tbody>
+ 	</table>
+</div>
+<!-- <div class="row">
+	<h3>Dotted</h3>
+	<table>
+	<tbody class="dottedTable"> 
+	    <tr><td>1/1:</td><td><span id="table-id1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-id2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-id3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-id4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-id5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-id6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-id7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-id8">0</span> ms</td></tr>
+	 </tbody>
+ </table>
+</div> -->
+
+<p>1,000 milliseconds (ms) = 1 second.</p>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+</body>
+</html>
