@@ -7,25 +7,25 @@
 </head>
 <body>
 <div class="container">
-<form id="input-form">
-  Input BPM:<br>
-  <input type="text" id="form-bpm">
-
-  
-</form>
-<button>Submit</button>
+	<h1>Beats Per Minute(BPM) Delay Calculator</h1>
+	<form id="input-form">
+	  Input BPM:<br>
+	  <input type="text" id="form-bpm">
+	</form>
+	<button onclick="submitBpm()">Submit</button>
+<div class="tables">
 <div class="row">
 	<h3 id="demo">Notes</h3>
 	<table>
 	<tbody class="notesTable"> 
-	    <tr><td>1/1:</td><td><span id="table-1">0</span> ms</td></tr>
-	    <tr><td>1/2:</td><td><span id="table-2">0</span> ms</td></tr>  
-	    <tr><td>1/4:</td><td><span id="table-4">0</span> ms</td></tr>
-	    <tr><td>1/8:</td><td><span id="table-8">0</span> ms</td></tr>
-	    <tr><td>1/16:</td><td><span id="table-16">0</span> ms</td></tr>
-	    <tr><td>1/32:</td><td><span id="table-32">0</span> ms</td></tr>
-	    <tr><td>1/64:</td><td><span id="table-64">0</span> ms</td></tr>
-	    <tr><td>1/128:</td><td><span id="table-128">0</span> ms</td></tr>
+	    <tr><td>1/1:</td><td><span id="table-n1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-n2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-n3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-n4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-n5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-n6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-n7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-n8">0</span> ms</td></tr>
 	 </tbody>
  </table>
 </div>
@@ -33,33 +33,33 @@
 	<h3>Triplets</h3>
 	<table>
 	<tbody class="tripletsTable"> 
-	    <tr><td>1/1:</td><td><span id="table-1t">0</span> ms</td></tr>
-	    <tr><td>1/2:</td><td><span id="table-2t">0</span> ms</td></tr>  
-	    <tr><td>1/4:</td><td><span id="table-4t">0</span> ms</td></tr>
-	    <tr><td>1/8:</td><td><span id="table-8t">0</span> ms</td></tr>
-	    <tr><td>1/16:</td><td><span id="table-16t">0</span> ms</td></tr>
-	    <tr><td>1/32:</td><td><span id="table-32t">0</span> ms</td></tr>
-	    <tr><td>1/64:</td><td><span id="table-64t">0</span> ms</td></tr>
-	    <tr><td>1/128:</td><td><span id="table-128t">0</span> ms</td></tr>
+	    <tr><td>1/1:</td><td><span id="table-t1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-t2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-t3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-t4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-t5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-t6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-t7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-t8">0</span> ms</td></tr>
 	 </tbody>
  	</table>
 </div>
-<!-- <div class="row">
+<div class="row">
 	<h3>Dotted</h3>
 	<table>
 	<tbody class="dottedTable"> 
-	    <tr><td>1/1:</td><td><span id="table-id1">0</span> ms</td></tr>
-	    <tr><td>1/2:</td><td><span id="table-id2">0</span> ms</td></tr>  
-	    <tr><td>1/4:</td><td><span id="table-id3">0</span> ms</td></tr>
-	    <tr><td>1/8:</td><td><span id="table-id4">0</span> ms</td></tr>
-	    <tr><td>1/16:</td><td><span id="table-id5">0</span> ms</td></tr>
-	    <tr><td>1/32:</td><td><span id="table-id6">0</span> ms</td></tr>
-	    <tr><td>1/64:</td><td><span id="table-id7">0</span> ms</td></tr>
-	    <tr><td>1/128:</td><td><span id="table-id8">0</span> ms</td></tr>
+	    <tr><td>1/1:</td><td><span id="table-d1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-d2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-d3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-d4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-d5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-d6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-d7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-d8">0</span> ms</td></tr>
 	 </tbody>
  </table>
-</div> -->
-
+</div>
+</div>
 <p>1,000 milliseconds (ms) = 1 second.</p>
 </div>
 <script
