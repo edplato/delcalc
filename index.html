@@ -1,3 +1,10 @@
+<!-- work on styling more
+	font and font size
+	inner table spacing
+	make input and button inline
+allow "enter" to be pressed after typing in number to improve UX
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +19,13 @@
 	  Input BPM:<br>
 	  <input type="text" id="form-bpm">
 	</form>
-	<button onclick="submitBpm()">Submit</button>
+	<button id="submitButton" onclick="submitBpm()">Submit</button>
+	<div>
+	<h3>Calculations for <span id="bpm-display">___</span> BPM</h3>
+	</div>
+
 <div class="tables">
-<div class="row">
+  <div class="row">
 	<h3 id="demo">Notes</h3>
 	<table>
 	<tbody class="notesTable"> 
@@ -27,9 +38,9 @@
 	    <tr><td>1/64:</td><td><span id="table-n7">0</span> ms</td></tr>
 	    <tr><td>1/128:</td><td><span id="table-n8">0</span> ms</td></tr>
 	 </tbody>
- </table>
-</div>
-<div class="row">
+    </table>
+  </div>
+  <div class="row">
 	<h3>Triplets</h3>
 	<table>
 	<tbody class="tripletsTable"> 
@@ -43,8 +54,8 @@
 	    <tr><td>1/128:</td><td><span id="table-t8">0</span> ms</td></tr>
 	 </tbody>
  	</table>
-</div>
-<div class="row">
+  </div>
+  <div class="row">
 	<h3>Dotted</h3>
 	<table>
 	<tbody class="dottedTable"> 
@@ -57,8 +68,8 @@
 	    <tr><td>1/64:</td><td><span id="table-d7">0</span> ms</td></tr>
 	    <tr><td>1/128:</td><td><span id="table-d8">0</span> ms</td></tr>
 	 </tbody>
- </table>
-</div>
+    </table>
+  </div>
 </div>
 <p>1,000 milliseconds (ms) = 1 second.</p>
 </div>

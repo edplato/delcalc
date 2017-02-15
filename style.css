@@ -1,16 +1,27 @@
+html {
+	width: 100%;
+}
+
 td {
 	border: 2px solid black;
 }
 
 .tables {
+	width: 100%;
     display: flex;
     justify-content: flex-start | space-between;
 }
 
 table {
-	width:12em;
+	margin: 0 auto;
+	width: 12em;
     padding-right: 2em;
 }
+
+/*input-form {
+	display: inline;
+}*/
+
 
 @media (max-width: 602px){
 	body{
@@ -19,14 +30,21 @@ table {
 
 	.tables {
 		text-align: center;
+		justify-content: center;
 		flex-direction: column;
+		/*margin-left: 2em;*/
 		width:100%; 
 	}
 	table {
 		text-align: center;
 		flex-direction: column;
-		width: 100%; 
-    	margin-left: 5%; 
-    	margin-right: 5%;
+		width: 18em; 
+	    padding-right: 0;
+    	/*margin-left: 15%; */
+    	/*margin-right: 15%;*/
 	}
+	table td {
+		/*min-width: 4em;*/
+	}
+
 }

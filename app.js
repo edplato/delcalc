@@ -1,12 +1,22 @@
 //60,000 divided by 120BPM = 500 milliseconds (.5 seconds)
 //multiply 1.5 for dotted values
 //multiply .667 for triplets
+
+// enter key 
+//  $(".searchbox").on("keypress", function(e) {
+//     if (e.keyCode == 13) {
+
+
+
+
+
 var num = "";
 var multiplierArr = [];
 
 function submitBpm() {
 	var bpm = document.getElementById("form-bpm").value;
 	bpmCheck(bpm);
+	document.getElementById("bpm-display").innerHTML = bpm;
 	multiplier(bpm);
 	notesCalc(bpm);
 	tripletsCalc(bpm);
@@ -62,3 +72,4 @@ for(var i=1; i<=8; i++){
 	document.getElementById(x).innerHTML = y.toFixed(2);
    }
 }
+
