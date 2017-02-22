@@ -7,24 +7,25 @@ body {
   background-color: #333;
   color: #333;
   font-family: 'Source Sans Pro';
-  font-weight:400;
+  font-weight: 400;
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  margin: 0px auto 10px auto;
+  margin: 0px auto 4px auto;
 }
 
 h3 {
 	margin-top: 20px;
 	margin-bottom: 10px;
+  letter-spacing: 2.5px;
 }
 
 input {
   text-align: center;
   font-size: 25px;
   width: 5em;
-  margin: 16px auto;
+  margin: 11px auto;
   border-width: .2em;
   border-style: solid;
   border-radius: 5px;
@@ -146,6 +147,10 @@ a {
   opacity:1;
   cursor:pointer;
   letter-spacing: 4.5px;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
 }
 
 .button:hover {
